@@ -78,7 +78,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Wireless Keyboard and Mouse | Setup to control raspberry pi monitor | $23.99 | <https://www.amazon.com/Wireless-Keyboard-Full-Size-Desktops-Computer/dp/B07XDWCLYF/ref=sr_1_6?crid=2DM5RC07S9CCJ&keywords=wireless+keyboard+and+mouse+dongguan&qid=1688744605&sprefix=wireless+keyboard+and+mouse+dongguan%2Caps%2C167&sr=8-6 |
+| Wireless Keyboard and Mouse | Setup to control raspberry pi monitor | $23.99 | https://www.amazon.com/Wireless-Keyboard-Full-Size-Desktops-Computer/dp/B07XDWCLYF/ref=sr_1_6?crid=2DM5RC07S9CCJ&keywords=wireless+keyboard+and+mouse+dongguan&qid=1688744605&sprefix=wireless+keyboard+and+mouse+dongguan%2Caps%2C167&sr=8-6 |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
