@@ -78,9 +78,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Wireless Keyboard and Mouse | Setup to control raspberry pi monitor | $23.99 | https://www.amazon.com/Wireless-Keyboard-Full-Size-Desktops-Computer/dp/B07XDWCLYF/ref=sr_1_6?crid=2DM5RC07S9CCJ&keywords=wireless+keyboard+and+mouse+dongguan&qid=1688744605&sprefix=wireless+keyboard+and+mouse+dongguan%2Caps%2C167&sr=8-6 |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Wireless Keyboard and Mouse | Setup to control Raspberry PI monitor | $23.99 | https://www.amazon.com/Wireless-Keyboard-Full-Size-Desktops-Computer/dp/B07XDWCLYF/ref=sr_1_6?crid=2DM5RC07S9CCJ&keywords=wireless+keyboard+and+mouse+dongguan&qid=1688744605&sprefix=wireless+keyboard+and+mouse+dongguan%2Caps%2C167&sr=8-6 |
+| ArduCam 5MP | Camera for Raspberry Pi and motion detection | $9.99 | https://www.amazon.com/Arducam-Megapixels-Sensor-OV5647-Raspberry/dp/B012V1HEP4/ref=sr_1_4?crid=25KAFBZ1XFK44&keywords=arducam%2B5%2Bmegapixels&qid=1688948360&sprefix=arducam%2B5%2Bmegapixels%2Caps%2C98&sr=8-4&th=1 |
+| CanaKit Raspberry PI 4 Starter Kit | Contains Raspberry PI Machine to run project code | $139.99 | https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9/ref=sr_1_5?crid=3RE969MKWCNXG&keywords=CanaKit+raspberry+pi+4+starter+kit+4GB+Ram&qid=1688948553&sprefix=canakit+raspberry+pi+4+starter+kit+4gb+ram%2Caps%2C82&sr=8-5&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0 |
+| Monitor with HDMI port | Display linked to Raspberry PI | $42.99 | https://www.amazon.com/Monitor-Raspberry-Speakers-Display-Computer/dp/B09ZD8YS7L/ref=sr_1_21?crid=1H6I1L9OP9V4U&keywords=monitor+with+hdmi+port+raspberry+pi&qid=1688948701&sprefix=monitor+with+hdmi+port+raspberry+pi%2Caps%2C85&sr=8-21 |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
