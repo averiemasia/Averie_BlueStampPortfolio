@@ -31,27 +31,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+Continuing working in colab, for my second milestone I advanced into making image detection a working game.  Trying to address some issues I saw in my first milestone with correctly identifying the images, I looked back through the original data set (that was used for training the model) and figured out how to most efficiently crop the image that my camera was taking so that my hand would be similar to the hands that trained the machine learning model.  In the future I want to work on making the code flow more smoothly and also giving the computer the option to cheat to win.  The original project I selected had used the pi camera to track the movements of the player's hand and accurately guess what move they are going to make, so I want to include a flare of that in my final project.
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iWbenZ6Ey8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+The original project I selected would've included a raspberry pi and a pi camera; however, technical difficulties led me to switch gears and move to working solely with google colab.  My original objective when choosing this project was to learn about machine learning and be able to apply training a model to a data set other than the Rock, Paper, Scissors images.  Although these issues are not ideal, I know that they are a huge part of the engineering process, especially if I decide to continue into Computer Science.  For this first milestone I was able to connect my camera to google colab and correctly identify whether the picture I took was Rock, Paper, or Scissors and though when I selected the project I thought I'd be using the command line to code on the raspberry pi, coding with python on google colab has still been enriching.  
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
