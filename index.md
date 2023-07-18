@@ -35,15 +35,84 @@ The original project I selected would've included a raspberry pi and a pi camera
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
-void setup() {
-  // put your setup code here, to run once:
-}
+```
+{
+from IPython.display import display, Javascript
+from google.colab.output import eval_js
+from base64 import b64decode
 
-void loop() {
-  // put your main code here, to run repeatedly:
+def take_photo(filename='photo.jpg', quality=0.8):
+  js = Javascript('''
+    async function takePhoto(quality) {
+      const div = document.createElement('div');
+      const capture = document.createElement('button');
+      capture.textContent = 'Capture';
+      div.appendChild(capture);
+
+      const video = document.createElement('video');
+      video.style.display = 'block';
+      const stream = await navigator.mediaDevices.getUserMedia({video: true});
+
+      document.body.appendChild(div);
+      div.appendChild(video);
+      video.srcObject = stream;
+      await video.play();
+
+      // Resize the output to fit the video element.
+      google.colab.output.setIframeHeight(document.documentElement.scrollHeight, true);
+
+      // Wait for Capture to be clicked.
+      await new Promise((resolve) => capture.onclick = resolve);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+      stream.getVideoTracks()[0].stop();
+      div.remove();
+      return canvas.toDataURL('image/jpeg', quality);
+    }
+    ''')
+  display(js)
+  data = eval_js('takePhoto({})'.format(quality))
+  binary = b64decode(data.split(',')[1])
+  with open(filename, 'wb') as f:
+    f.write(binary)
+  return filename
+
+## taking a picture
+def takePic():
+  from IPython.display import Image
+  try:
+    filename = take_photo()
+
+  except Exception as err:
+    # Errors will be thrown if the user does not have a webcam or if they do not
+    # grant the page permission to access it.
+    print(str(err)) 
 }
 ```
+This code block is already in the colab database, and enables the user to take a picture using their webcam and import it into colab to be referenced in the future.
+
+```
+{
+## cropping the image
+def cropImg():
+  global im
+  import cv2
+  from matplotlib import pyplot as plt
+  import matplotlib.pyplot as plt
+  from scipy import ndimage
+  import numpy as np
+
+  def crop(img, center, width, height):
+      return cv2.getRectSubPix(img, (width, height), center)
+
+  im = cv2.imread("photo.jpg")
+  im = crop(im, (320, 200), 330,330)
+}
+```
+This code block crops the image that is taken so that it fits the dimensions for the trained model.
 
 # Project Materials
 To do the project that I ended up completing, all that you will need is a free Google Account and a laptop to run Google Colab on!  Google Colab is accessible by everyone and there are tons of pretrained models and other resources readily available for use.
