@@ -114,6 +114,148 @@ def cropImg():
 ```
 This code block crops the image that is taken so that it fits the dimensions for the trained model.
 
+```
+{
+## identifying and labeling the image
+def identify():
+  global im
+  from numpy.ma.extras import row_stack
+  import numpy as np
+  import tensorflow as tf
+  import cv2
+  from matplotlib import pyplot as plt
+
+  def crop(img, center, width, height):
+      return cv2.getRectSubPix(img, (width, height), center)
+
+  im = cv2.resize(im, (150, 150))
+  im = im[...,::-1]
+
+# Load TFLite model and allocate tensors.
+  interpreter = tf.lite.Interpreter(model_path="/content/drive/MyDrive/Colab Notebooks/model.tflite")
+  interpreter.allocate_tensors()
+
+# Get input and output tensors.
+  input_details = interpreter.get_input_details()
+  output_details = interpreter.get_output_details()
+
+# Test model on random input data.
+  input_shape = input_details[0]['shape']
+  input_data = np.array([im], dtype=np.float32)
+  interpreter.set_tensor(input_details[0]['index'], input_data)
+
+  interpreter.invoke()
+
+# The function `get_tensor()` returns a copy of the tensor data.
+# Use `tensor()` in order to get a pointer to the tensor.
+  output_data = interpreter.get_tensor(output_details[0]['index'])
+  global move
+  choice = max(output_data[0])
+  if choice==output_data[0][0]:
+    move = 'rock'
+  elif choice==output_data[0][1]:
+    move = 'paper'
+  else:
+    move = 'scissors'
+  print ('YOUR MOVE:')
+  print (move)
+}
+```
+This code will recognize the image taken on google colab as either rock, paper, or scissors and label it its respective hand movement.
+
+```
+{
+### logistical functions
+import random
+uwin = 0
+## random selection of move
+def playFair():
+  #randomly chooses cmove
+  global uwin
+  global move
+  comp = random.randint(0,2)
+  if comp == 0:
+    cmove = 'rock'
+  elif comp == 1:
+    cmove = 'paper'
+  else:
+    cmove = 'scissors'
+  print ('MY MOVE:')
+  print (cmove)
+  #win statement
+  if move == 'rock':
+    if cmove == 'rock':
+      print ('draw!')
+    elif cmove == 'paper':
+      print ('you lose! sorry!')
+    else:
+      print ('you win!')
+      uwin += 1
+  if move == 'paper':
+    if cmove == 'paper':
+      print ('draw!')
+    elif cmove == 'scissors':
+      print ('you lose! sorry!')
+    else:
+      print ('you win!')
+      uwin += 1
+  if move == 'scissors':
+    if cmove == 'scissors':
+      print ('draw!')
+    elif cmove == 'rock':
+      print ('you lose! sorry!')
+    else:
+      print ('you win!')
+      uwin += 1
+  return uwin
+## cheating computer
+def beatPlayer():
+  global move
+  # cheat to choose cmove
+  if move == 'rock':
+    cmove = 'paper'
+  elif move == 'paper':
+    cmove = 'scissors'
+  else:
+    cmove = 'rock'
+  print('MY MOVE:')
+  print(cmove)
+  # win statements
+  print('you lose! sorry!')
+}
+```
+This code block provides the logic of the game, meaning it decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hense two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
+
+```
+{
+## script for game
+## see above to reference code
+print('if you want to play, type yes - if you want to stop playing, type no')
+
+while True:
+  userInput = input('play?')
+# call on functions
+  if userInput == 'yes':
+    takePic()
+    cropImg()
+    identify()
+# honest or cheating machine?
+    if uwin < 5:
+      playFair()
+    else:
+      beatPlayer()
+
+    print('SCORE:')
+    print(uwin)
+
+  elif userInput == 'no':
+    print('thanks for playing! FINAL SCORE:')
+    print(uwin)
+    break
+}
+```
+This final code block is the script for the game and calls on functions defined earlier in my code.  It tells the computer to cheat if the user wins 5 rounds, and prompts the player to answer if they would like to keep playing after each round, stopping if they type in "no."
+
 # Project Materials
 To do the project that I ended up completing, all that you will need is a free Google Account and a laptop to run Google Colab on!  Google Colab is accessible by everyone and there are tons of pretrained models and other resources readily available for use.
 The rock, paper, scissors pre-trained model is here. 
