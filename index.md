@@ -18,7 +18,7 @@ Since the dawn of technology, computers have been there as a friend to those who
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JKLz-hdu-_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The final outcome of my project is a game which the user can decide if they want to play or not and a computer will play against them.  In the end, this computer is told to start cheating and win every time after the user wins 5 rounds.  At this program I've learned about machine learning, overfitting a model (meaning it was trained on a data set too specific), python coding, the command line, and more.  Although I faced more challenges than I anticipated, I am glad that I did because it taught me more than if everything had simply gone smoothly.  Though my raspberry pi discouraged me, using Google Colab expanded my computer science knowledge and I couldn't be happier.
+The final outcome of my project is a game which the user can decide if they want to play or not and a computer will play against them.  In the end, this computer is told to start cheating and win every time after the user wins 5 rounds.  At this program I've learned about machine learning, overfitting a model, python coding, the command line, and more.  Although I faced more challenges than I anticipated, I am glad that I did because it taught me more than if everything had simply gone smoothly.  Though my raspberry pi discouraged me, using Google Colab expanded my computer science knowledge and I couldn't be happier.
 
 # Second Milestone
 
