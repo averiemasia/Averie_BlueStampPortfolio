@@ -96,9 +96,7 @@ def takePic():
     print(str(err)) 
 }
 ```
-This above code block is already in the Colab database, and enables the user to take a picture using their webcam and import it into Colab to be referenced in the future.
-
-
+This above code block is already in the Colab database, and enables the user to take a picture using their webcam and import it into Colab to be referenced in the future.  
 
 ```
 {
@@ -118,9 +116,7 @@ def cropImg():
   im = crop(im, (320, 200), 330,330)
 }
 ```
-This code block crops the image that is taken so that it fits the dimensions for the trained model.
-
-
+This code block crops the image that is taken so that it fits the dimensions for the trained model.  
 
 ```
 {
@@ -169,9 +165,7 @@ def identify():
   print (move)
 }
 ```
-Above, this code will recognize the image taken on Google Colab as either rock, paper, or scissors and label it its respective hand movement.
-
-
+Above, this code will recognize the image taken on Google Colab as either rock, paper, or scissors and label it its respective hand movement.  
 
 ```
 {
@@ -234,9 +228,7 @@ def beatPlayer():
   print('you lose! sorry!')
 }
 ```
-These functions above provide the logic of the game, meaning they decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
-
-
+These functions above provide the logic of the game, meaning they decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.  
 
 ```
 {
@@ -266,8 +258,7 @@ while True:
     break
 }
 ```
-This final code block is the script for the game and calls on functions defined earlier in my code.  It tells the computer to cheat if the user wins 5 rounds, and prompts the player to answer if they would like to keep playing after each round, stopping if they type in "no".
-
+This final code block is the script for the game and calls on functions defined earlier in my code.  It tells the computer to cheat if the user wins 5 rounds, and prompts the player to answer if they would like to keep playing after each round, stopping if they type in "no".  
 
 # Project Materials
 To do the project that I ended up completing, all that you will need is a free Google Account and a laptop to run Google Colab on!  Google Colab is accessible by everyone and there are tons of pretrained models and other resources readily available for use.
