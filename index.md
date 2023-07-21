@@ -23,10 +23,17 @@ Continuing working in colab, for my second milestone I advanced into making imag
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iWbenZ6Ey8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Headstone Image](raspi.JPG)
-![Headstone Image](cam.JPG)
-
 The original project I selected would've included a raspberry pi and a pi camera; however, technical difficulties led me to switch gears and move to working solely with google colab.  My original objective when choosing this project was to learn about machine learning and be able to apply training a model to a data set other than the Rock, Paper, Scissors images.  Although these issues are not ideal, I know that they are a huge part of the engineering process, especially if I decide to continue into Computer Science.  For this first milestone I was able to connect my camera to google colab and correctly identify whether the picture I took was Rock, Paper, or Scissors and though when I selected the project I thought I'd be using the command line to code on the raspberry pi, coding with python on google colab has still been enriching.  
+
+# Progress Pictures
+
+![Headstone Image](raspi.JPG)
+This picture was taken when I successfully constructed my raspberry pi computer and hooked it up to my monitor.
+
+![Headstone Image](cam.JPG)
+After downloading packages and updates, I successfully connected my picam to my raspberry pi and took a picture with the camera.
+
+
 
 # Code
 My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on google colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utlitzes the functions and also decides whether the game will play fair or not.
