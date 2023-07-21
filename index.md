@@ -17,7 +17,7 @@ The final outcome of my project is a game which the user can decide if they want
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Saz_tLSkUOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Continuing working in colab, for my second milestone I advanced into making image detection a working game.  Trying to address some issues I saw in my first milestone with correctly identifying the images, I looked back through the original data set (that was used for training the model) and figured out how to most efficiently crop the image that my camera was taking so that my hand would be similar to the hands that trained the machine learning model.  In the future I want to work on making the code flow more smoothly and also giving the computer the option to cheat to win.  The original project I selected had used the pi camera to track the movements of the player's hand and accurately guess what move they are going to make, so I want to include a flare of that in my final project.
+Continuing working in Colab, for my second milestone I advanced into making image detection a working game.  Trying to address some issues I saw in my first milestone with correctly identifying the images, I looked back through the original data set (that was used for training the model) and figured out how to most efficiently crop the image that my camera was taking so that my hand would be similar to the hands that trained the machine learning model.  In the future I want to work on making the code flow more smoothly and also giving the computer the option to cheat to win.  The original project I selected had used the pi camera to track the movements of the player's hand and accurately guess what move they are going to make, so I want to include a flare of that in my final project.
 
 # First Milestone
 
@@ -96,7 +96,8 @@ def takePic():
     print(str(err)) 
 }
 ```
-This above code block is already in the colab database, and enables the user to take a picture using their webcam and import it into colab to be referenced in the future.
+This above code block is already in the Colab database, and enables the user to take a picture using their webcam and import it into Colab to be referenced in the future.
+
 
 
 ```
@@ -118,6 +119,8 @@ def cropImg():
 }
 ```
 This code block crops the image that is taken so that it fits the dimensions for the trained model.
+
+
 
 ```
 {
@@ -167,6 +170,7 @@ def identify():
 }
 ```
 Above, this code will recognize the image taken on Google Colab as either rock, paper, or scissors and label it its respective hand movement.
+
 
 
 ```
@@ -231,6 +235,7 @@ def beatPlayer():
 }
 ```
 These functions above provide the logic of the game, meaning they decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
+
 
 
 ```
