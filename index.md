@@ -33,7 +33,7 @@ This picture was taken when I successfully constructed my raspberry pi computer 
 ![Headstone Image](cam.JPG)
 After downloading packages and updates, I successfully connected my picam to my raspberry pi and took a picture with the camera.
 
-
+![Headstone Image](rps.jpeg)
 
 # Code
 My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on google colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utlitzes the functions and also decides whether the game will play fair or not.
