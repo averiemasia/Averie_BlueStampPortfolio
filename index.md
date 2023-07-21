@@ -5,7 +5,7 @@ Computers have always been there as a friend to those who need one at the moment
 |:--:|:--:|:--:|:--:|
 | Averie M | Schreiber High School | Computer Science | Incoming Senior
 
-![Headstone Image](headshot.png)
+![Headstone Image](coverpic.png)
   
 # Final Milestone
 
