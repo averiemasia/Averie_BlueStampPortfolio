@@ -1,5 +1,5 @@
-# Rock, Paper, Scissors Game with Image Recognition
-Since the dawn of technology, computers have been there as a friend to those who need one at the moment, with games created to take the place of a human counterpart.  The game I created provides some company in a game as classic as it can get: rock, paper, scissors.  Though originally starting as a raspberry pi project, I've made something that I'm equally as proud of and learned while doing it that part of engineering is adapting and growing with your project.
+# Image Recognition Applied to Gaming: Rock, Paper, Scissors!
+Computers have always been there as a friend to those who need one at the moment, with games created to take the place of a human counterpart.  The game I created provides some company in a game as classic as it can get: rock, paper, scissors.  Though originally starting as a Raspberry Pi project, I've made something that I'm equally as proud of and learned while doing it that part of engineering is adapting and growing with your project.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -11,7 +11,7 @@ Since the dawn of technology, computers have been there as a friend to those who
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JKLz-hdu-_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The final outcome of my project is a game which the user can decide if they want to play or not and a computer will play against them.  In the end, this computer is told to start cheating and win every time after the user wins 5 rounds.  At this program I've learned about machine learning, overfitting a model, python coding, the command line, and more.  Although I faced more challenges than I anticipated, I am glad that I did because it taught me more than if everything had simply gone smoothly.  Though my raspberry pi discouraged me, using Google Colab expanded my computer science knowledge and I couldn't be happier.
+The final outcome of my project is a game which the user can decide if they want to play or not and a computer will play against them.  In the end, this computer is told to start cheating and win every time after the user wins 5 rounds.  At this program I've learned about machine learning, overfitting a model, python coding, the command line, and more.  Although I faced more challenges than I anticipated, I am glad that I did because it taught me more than if everything had simply gone smoothly.  Though my Raspberry Pi discouraged me, using Google Colab expanded my computer science knowledge and I couldn't be happier.
 
 # Second Milestone
 
@@ -23,21 +23,21 @@ Continuing working in colab, for my second milestone I advanced into making imag
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iWbenZ6Ey8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The original project I selected would've included a raspberry pi and a pi camera; however, technical difficulties led me to switch gears and move to working solely with google colab.  My original objective when choosing this project was to learn about machine learning and be able to apply training a model to a data set other than the Rock, Paper, Scissors images.  Although these issues are not ideal, I know that they are a huge part of the engineering process, especially if I decide to continue into Computer Science.  For this first milestone I was able to connect my camera to google colab and correctly identify whether the picture I took was Rock, Paper, or Scissors and though when I selected the project I thought I'd be using the command line to code on the raspberry pi, coding with python on google colab has still been enriching.  
+The original project I selected would've included a Raspberry Pi and a pi camera; however, technical difficulties led me to switch gears and move to working solely with Google Colab.  My original objective when choosing this project was to learn about machine learning and be able to apply training a model to a data set other than the Rock, Paper, Scissors images.  Although these issues are not ideal, I know that they are a huge part of the engineering process, especially if I decide to continue into Computer Science.  For this first milestone I was able to connect my camera to Google Colab and correctly identify whether the picture I took was Rock, Paper, or Scissors and though when I selected the project I thought I'd be using the command line to code on the Raspberry Pi, coding with python on Google Colab has still been enriching.  
 
 # Progress Pictures
 
 ![Headstone Image](raspi.JPG)
-This picture was taken when I successfully constructed my raspberry pi computer and hooked it up to my monitor.
+This picture was taken when I successfully constructed my Raspberry Pi computer and hooked it up to my monitor.
 
 ![Headstone Image](cam.JPG)
-After downloading packages and updates, I successfully connected my picam to my raspberry pi and took a picture with the camera.
+After downloading packages and updates, I successfully connected my PiCam to my Raspberry Pi and took a picture with the camera.
 
 ![Headstone Image](rps.jpeg)
-The first pictures I ran through the model on google colab!
+The first pictures I ran through the model on Google Colab!
 
 # Code
-My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on google colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utilizes the functions and also decides whether the game will play fair or not.
+My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on Google Colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utilizes the functions and also decides whether the game will play fair or not.
 
 ```
 {
@@ -96,7 +96,8 @@ def takePic():
     print(str(err)) 
 }
 ```
-This code block is already in the colab database, and enables the user to take a picture using their webcam and import it into colab to be referenced in the future.
+This above code block is already in the colab database, and enables the user to take a picture using their webcam and import it into colab to be referenced in the future.
+
 
 ```
 {
@@ -165,7 +166,8 @@ def identify():
   print (move)
 }
 ```
-This code will recognize the image taken on google colab as either rock, paper, or scissors and label it its respective hand movement.
+Above, this code will recognize the image taken on Google Colab as either rock, paper, or scissors and label it its respective hand movement.
+
 
 ```
 {
@@ -228,7 +230,8 @@ def beatPlayer():
   print('you lose! sorry!')
 }
 ```
-This code block provides the logic of the game, meaning it decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
+These functions above provide the logic of the game, meaning they decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
+
 
 ```
 {
@@ -258,7 +261,8 @@ while True:
     break
 }
 ```
-This final code block is the script for the game and calls on functions defined earlier in my code.  It tells the computer to cheat if the user wins 5 rounds, and prompts the player to answer if they would like to keep playing after each round, stopping if they type in "no."
+This final code block is the script for the game and calls on functions defined earlier in my code.  It tells the computer to cheat if the user wins 5 rounds, and prompts the player to answer if they would like to keep playing after each round, stopping if they type in "no".
+
 
 # Project Materials
 To do the project that I ended up completing, all that you will need is a free Google Account and a laptop to run Google Colab on!  Google Colab is accessible by everyone and there are tons of pretrained models and other resources readily available for use.
