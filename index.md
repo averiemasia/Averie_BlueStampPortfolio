@@ -1,5 +1,5 @@
 # Rock, Paper, Scissors Game with Image Recognition
-Since the dawn of technology, computers have been there as a friend to those who need one in the moment, with games created to take the place of a human counterpart.  The game I created provides some company in a game as classic as it can get: rock, paper, scissors.  Though originally starting as a raspberry pi project, I've made something that I'm equally as proud of and learned while doing it that part of engineering is adapting and growing with your project.
+Since the dawn of technology, computers have been there as a friend to those who need one at the moment, with games created to take the place of a human counterpart.  The game I created provides some company in a game as classic as it can get: rock, paper, scissors.  Though originally starting as a raspberry pi project, I've made something that I'm equally as proud of and learned while doing it that part of engineering is adapting and growing with your project.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -34,9 +34,10 @@ This picture was taken when I successfully constructed my raspberry pi computer 
 After downloading packages and updates, I successfully connected my picam to my raspberry pi and took a picture with the camera.
 
 ![Headstone Image](rps.jpeg)
+The first pictures I ran through the model on google colab!
 
 # Code
-My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on google colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utlitzes the functions and also decides whether the game will play fair or not.
+My code is broken into two main parts, the setup code, and the game code.  The setup code involves taking a picture of your hand, cropping it, and identifying it (all of these are defined as functions to be called on in the game code).  The setup code could've been in the same block on google colab as the game code, however for aesthetic sake it looks more organized to have the setup code as callable functions.  The game code utilizes the functions and also decides whether the game will play fair or not.
 
 ```
 {
@@ -227,7 +228,7 @@ def beatPlayer():
   print('you lose! sorry!')
 }
 ```
-This code block provides the logic of the game, meaning it decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hense two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
+This code block provides the logic of the game, meaning it decides what the computer's move is and if that is a win, loss, or draw in respect to the user's move.  There are two different functions and hence two different pathways the computer can take: either choosing randomly and playing fair or choosing a move to always beat the player and cheating.
 
 ```
 {
