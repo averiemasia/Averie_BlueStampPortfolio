@@ -6,6 +6,7 @@ Computers have always been there as a friend to those who need one at the moment
 | Averie M | Schreiber High School | Computer Science | Incoming Senior
 
 ![Headstone Image](coverpic.png)
+Picture captured in my Google Colab where the user would take a picture of their rock, paper, or scissors hand gesture.
   
 # Final Milestone
 
