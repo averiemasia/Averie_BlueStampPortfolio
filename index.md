@@ -118,7 +118,7 @@ def cropImg():
   im = crop(im, (320, 200), 330,330)
 }
 ```
-This code block crops the image that is taken so that it fits the dimensions for the trained model. 
+This function above crops the image that is taken so that it fits the dimensions for the trained model. 
 
 
 ```
